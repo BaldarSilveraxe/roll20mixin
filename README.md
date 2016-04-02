@@ -49,3 +49,26 @@ or
 > var obj=getObj('character', id);<br>_uremoveObj(obj,'character')<br>=> true
 
 <hr>
+
+**_.snapdist(distance,unit,[rounding type])**<br>Used to snap a distance to a unit. Rounding type is "f" (floor), "r" (rounding), "c" (ceiling).
+> _.snapdist(50.5,70,"f")<br>=> 0
+
+or
+
+> _.snapdist(50.5,70,"r")<br>=> 70
+
+or
+
+> _.snapdist(70.5,70,"c")<br>=> 140
+
+<hr>
+
+**_.snapspin(rotation,[snap degree])**<br>
+Used to snap "isdrawing: true" rotation. Cares for over rotation (value larger then 360) and cares for input errors as follows:<br>
+null => 0<br>
+undefined => 0<br>
+NaN => 0<br>
+false => 0<br>
+true => 0<br>
+
+> _.snapspin(obj=get('rotation',45)<br>=> 135 
