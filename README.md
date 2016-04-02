@@ -46,7 +46,7 @@ or
 
 or
 
-> var obj=getObj('character', id);<br>_uremoveObj(obj,'character')<br>=> true
+> var obj=getObj('character', id);<br>_.removeObj(obj,'character')<br>=> true
 
 <hr>
 
@@ -71,4 +71,4 @@ NaN => 0<br>
 false => 0<br>
 true => 0<br>
 
-> _.snapspin(obj=get('rotation',45)<br>=> 135 
+> _.snapspin(obj.get('rotation’),45)<br>=> 135 
