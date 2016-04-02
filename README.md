@@ -28,3 +28,8 @@ true => 1<br>
 or
 
 > _.bound(50.5,0,10,true)<br>=> 56
+
+<hr>
+
+**_.represents([obj or id])**<br>
+Returns the character object for a graphic object or graphic ID if the graphic represents a character. (Returns false if its not a graphic object or graphic id and/or does not represent a character.
