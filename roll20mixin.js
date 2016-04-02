@@ -58,9 +58,3 @@ var roll20mixin = roll20mixin || (function() {
         mixinroll20: mixinroll20
     };
 }()); 
-
-on('ready',function(){
-    'use strict';
-    
-    roll20mixin.mixinroll20();
-});
