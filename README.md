@@ -32,4 +32,20 @@ or
 <hr>
 
 **_.represents([obj or id])**<br>
-Returns the character object for a graphic object or graphic ID if the graphic represents a character. (Returns false if its not a graphic object or graphic id and/or does not represent a character.
+Returns the character object for a graphic object or graphic ID if the graphic represents a character. (Returns false if its not a graphic object or graphic id and/or does not represent a character.)
+
+<hr>
+
+**_.removeObj(obj,[type required for non-graphics types])**<br>
+Used to remove an object. Returns false if the object is undefined. Graphic do not require a ***type*** ("graphic') but other objects require a ***type*** to avoid mistaken removal. 
+> var obj=getObj('graphic', id);<br>_.removeObj(obj)<br>=> true
+
+or
+
+> var obj=getObj('character', id);<br>_.removeObj(obj)<br>=> false
+
+or
+
+> var obj=getObj('character', id);<br>_uremoveObj(obj,'character')<br>=> true
+
+<hr>
