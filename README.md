@@ -50,7 +50,7 @@ or
 
 <hr>
 
-**_.snapdist(distance,unit,[rounding type])**<br>Used to snap a distance to a unit. Rounding type is "f" (floor), "r" (rounding), "c" (ceiling).
+**_.snapdist(distance,unit,[rounding type])**<br>Used to snap a distance to a unit. Rounding type is "floor", "ceil", or defaults to "round".
 > _.snapdist(50.5,70,"f")<br>=> 0
 
 or
