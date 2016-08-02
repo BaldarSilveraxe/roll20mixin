@@ -23,7 +23,7 @@ var roll20mixin = roll20mixin || (function() {
                             return r;
                         }
                     }
-                    return false;
+                    return undfined; //need to update read me
                 },
                 removeObj: function (obj,type){
                     if(!_.isUndefined(obj)){
